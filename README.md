@@ -54,3 +54,7 @@ Include any additional information, tips, or important notes that users should b
 ## Feedback
 
 We welcome your feedback! If you encounter any issues or have suggestions for improvement, please contact us at [harshamalmasinghe2001@gmail.com].
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
