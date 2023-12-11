@@ -22,10 +22,6 @@ Allow registered users to log in securely through the UserLoginPage. This featur
 
 ## How to Use
 
-Provide concise instructions or examples on how users can utilize these features. Include any specific steps, parameters, or considerations they should be aware of.
-
-### Example:
-
 1. **Payment Process:**
    - Navigate to the UserPaymentPage.
    - Select the desired vaccination service.
@@ -47,9 +43,6 @@ Provide concise instructions or examples on how users can utilize these features
      - Enter your registered credentials.
      - Log in to access the portal's features.
 
-## Notes
-
-Include any additional information, tips, or important notes that users should be aware of while using these features.
 
 ## Feedback
 
