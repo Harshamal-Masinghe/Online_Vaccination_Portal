@@ -1,0 +1,254 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #31d088;
+  color: #333;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header section */
+#head {
+  background-color: #263A29;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  height: 100px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.brand {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.profile {
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 0;
+  display: flex;
+  justify-content: end;
+  margin-left: 30px;
+}
+
+.profilePic {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  background: transparent;
+  border-radius: 100%;
+  transition: 0.3s;
+  display: flex;
+  justify-content: end;
+  margin-left: 100px;
+}
+
+.profilePic:hover {
+  transform: scale(1.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#tabs {
+  background-color: black;
+  width: 100%;
+  height: 46px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+a.btn {
+  color: white;
+}
+
+/* Payment section */
+.frame {
+  padding: 6%;
+  margin: 2% 9%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 82%;
+  background: #00ff97;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.payment {
+  text-align: center;
+}
+
+.payment h1 {
+  margin-bottom: 20px;
+}
+
+.card-details {
+  margin-bottom: 20px;
+}
+
+.card-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card-type label {
+  margin-right: 10px;
+}
+
+.type {
+  margin-right: 10px;
+}
+
+.card-number,
+.card-expiration,
+.card-cvv,
+.card-holder,
+.vaccine,
+.amount {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 36%;
+  padding: 1% 1% 1%;
+  border: 2px solid rgba(22, 141, 188, 0.836);
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.pay {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pay-button button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pay-button button:hover {
+  background-color: #000;
+}
+
+/* Footer section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1% 2% 1%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  margin-right: 82%;
+  padding: 0% 0% -2%;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+span.callicon {
+  margin-left: -42%;
+}
+
+span.mailicon {
+  margin-left: -12%;
+}
+
+.socials {
+  margin-left: 90%;
+  margin-top: -6%;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer .row {
+  color: gray;
+}
+
+.footer .row a{
+  width: 100%;
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}

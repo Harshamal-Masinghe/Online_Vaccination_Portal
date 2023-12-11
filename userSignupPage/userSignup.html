@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page | Mako Vaccines</title>
+  <link rel="stylesheet" href="userSignup.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <table id="head">
+      <tr>
+        <th><img id="logo" src="image/Logo.png" alt="Logo"></th>
+        <th>
+          <p class="brand">Mako Vaccines (PVT) LTD</p>
+        </th>
+        <th>
+          <button class="profile"><img src="image/profile photo.jpg" class="profilePic" alt="Profile Photo"></button>
+        </th>
+      </tr>
+    </table> 
+  </header>
+
+  <table id="tabs">
+    <tr>
+      <td><a class="btn" href="#">HOME</a></td>
+      <td><a class="btn" href="#">CUSTOMER CARE</a></td>
+      <td><a class="btn" href="#">SIGN UP</a></td>
+      <td><a class="btn" href="#">ABOUT US</a></td>
+    </tr>
+  </table>
+
+  <br>
+   <!-- User sign up -->
+
+<div class="wrapper">
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form method="post" action="login.php">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" name="remail" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" name="rpwd" required>
+                <label>Password</label>
+            </div>
+            <div>
+                <button type="submit" class="btn" name="login">Login</button>
+            </div>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form method="post" action="register.php">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" name="fname" required>
+                <label>First name</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" name="lname" required>
+              <label>Last name</label>
+          </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="call"></ion-icon></span>
+                <input type="number" name="number" required>
+                <label>Contact number</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="location"></ion-icon></span>
+                <input type="text" name="address" required>
+                <label>Address</label>
+            </div>
+            <div class="input-birthday">
+                <input type="date" name="dob" required>
+                <label>Birthday</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" name="pwd" required>
+              <label>Password</label>
+          </div>
+            <div>
+                <button type="submit" class="btn" name="register">Register</button>
+            </div>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <br>
+   <!-- Footer section -->
+   <footer>
+    <div class="footer">
+      <div class="footer-content">
+          <div class="contact">
+            <!-- Contact information -->
+            <h3>Contact us</h3>
+            <span class="locationicon"><ion-icon name="location"></ion-icon> &nbsp; No,72/B, Kaandy road, Malabe</span>
+            <span class="callicon"><ion-icon name="call"></ion-icon> &nbsp; +94 11 2992014</span>
+            <span class="mailicon"><ion-icon name="mail"></ion-icon> &nbsp; makovaccines@gmail.com</span>
+          </div>
+          <div class="socials">
+            <!-- Social media links -->
+            <h3>Follow us</h3>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+      </div>
+      <div class="row">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Customer Care</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <!-- Copyright information -->
+        <h4>INFERNO Copyright &copy; 2023 Inferno - All rights reserved || Designed By: Mako group</h4>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="userSignup.js"></script>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

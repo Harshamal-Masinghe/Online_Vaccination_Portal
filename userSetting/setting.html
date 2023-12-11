@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Setting Page | Mako Vaccines</title>
+  <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <table id="head">
+      <tr>
+        <th><img id="logo" src="image/Logo.png" alt="Logo"></th>
+        <th>
+          <p class="brand">Mako Vaccines (PVT) LTD</p>
+        </th>
+        <th>
+          <button class="profile"><img src="image/profile photo.jpg" class="profilePic" alt="Profile Photo"></button>
+        </th>
+      </tr>
+    </table> 
+  </header>
+
+  <table id="tabs">
+    <tr>
+      <td><a class="btn" href="#">HOME</a></td>
+      <td><a class="btn" href="#">CUSTOMER CARE</a></td>
+      <td><a class="btn" href="#">SIGN UP</a></td>
+      <td><a class="btn" href="#">ABOUT US</a></td>
+    </tr>
+  </table>
+
+  <!-- User setting -->
+
+  <div class="searchbox">
+    <input type="text" placeholder="Search..">
+  </div>
+    
+  <br><br>
+
+  <div class="tab-container">
+    <div class="tab active"><a class="tabtext">User Profile</a></div>
+    <div class="tab"><a class="tabtext" href="#">Order Details</a></div>
+  </div>
+
+  <br>
+
+  <div>
+    <h2>Account Setting</h2>
+    <div class="profileform">
+      <img src="image/profile photo.jpg" class="profilePic">
+    </div>
+    <br>
+    <button class="btnstyleprof">Change profile picture</button>
+    <br><br><br>
+  
+    <div class="accountset">
+      <form class="form" method="post" action="setting.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" > 
+        <br><br>
+  
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" >
+        <br><br>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" class="emails">
+        <br><br>
+  
+        <label for="phone">Phone Number</label>
+        <input type="text" name="number" placeholder="070 000 0000" class="number" id="phone">
+        <br><br>
+  
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pwd" maxlength="20" class="pwd">
+        <br><br>
+  
+        <label for="add">Address</label>
+        <input type="text" id="add" name="address">  
+        <br><br>
+
+        <label for="lname">Birth date</label>
+        <input type="date" id="lname" name="dob" >
+        <br><br>
+
+        <div>
+          <button class="btnstylesave" onclick="validateSettingsForm()" name="update">Save Changes</button>
+        </div>
+  
+        <br><br>
+        <div>
+          <button class="btnstyledel" name="delete">Delete Account</button><br><br>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Footer section -->
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="contact">
+          <!-- Contact information -->
+          <h3>Contact us</h3>
+          <span class="locationicon"><ion-icon name="location"></ion-icon> &nbsp; No,72/B, Kaandy road, Malabe</span>
+          <span class="callicon"><ion-icon name="call"></ion-icon> &nbsp; +94 11 2992014</span>
+          <span class="mailicon"><ion-icon name="mail"></ion-icon> &nbsp; makovaccines@gmail.com</span>
+        </div>
+        <div class="socials">
+          <!-- Social media links -->
+          <h3>Follow us</h3>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
+      </div>
+      <div class="row">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Customer Care</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <!-- Copyright information -->
+        <h4>INFERNO Copyright &copy; 2023 Inferno - All rights reserved || Designed By: Mako group</h4>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="setting.js"></script>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

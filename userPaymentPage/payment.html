@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page | Mako Vaccines</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <table id="head">
+      <tr>
+        <th><img id="logo" src="image/Logo.png" alt="Logo"></th>
+        <th>
+          <p class="brand">Mako Vaccines (PVT) LTD</p>
+        </th>
+        <th>
+          <button class="profile"><img src="image/profile photo.jpg" class="profilePic" alt="Profile Photo"></button>
+        </th>
+      </tr>
+    </table> 
+  </header>
+
+  <table id="tabs">
+    <tr>
+      <td><a class="btn" href="#">HOME</a></td>
+      <td><a class="btn" href="#">CUSTOMER CARE</a></td>
+      <td><a class="btn" href="#">SIGN UP</a></td>
+      <td><a class="btn" href="#">ABOUT US</a></td>
+    </tr>
+  </table>
+
+  <!-- Payment section -->
+<form method="post" action="payment.php">
+  <div class="frame">
+    <table>
+      <tr>
+        <th><h2>Billing details</h2></th>
+        <th><h2>Payment</h2></th>
+      </tr>
+      <tr>
+        <td>
+          <div class="billing-details">
+            <!-- Bill name input -->
+            <div class="bill-name">
+              <label for="bill-name">Full name</label>
+              <input type="text" id="bill-name" name="bname" placeholder="Jasper Creed">
+            </div>
+          </div>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <th>
+                <label for="visa">Card Type</label>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <div class="type">
+                  <input type="radio" name="ctype" id="visa" checked>
+                  <label for="visa" class="radio">Visa</label>
+                </div>
+              </td>
+              <td>
+                <div class="type">
+                  <input type="radio" name="ctype" id="mastercard">
+                  <label for="mastercard" class="radio">Mastercard</label>
+                </div>
+              </td>
+              <td>
+                <div class="type">
+                  <input type="radio" name="ctype" id="american-express">
+                  <label for="american-express" class="radio">American Express</label>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="billing-details">
+            <!-- Bill email input -->
+            <div class="bill-email">
+              <label for="bill-email">Email</label>
+              <input type="email" id="bill-email" name="bemail" placeholder="example@gmail.com">
+            </div>
+          </div>
+        </td>
+        <td>
+          <!-- Card holder input -->
+          <div class="card-holder">
+            <label for="card-holder">Card Holder</label>
+            <input type="text" id="card-holder" name="cname" placeholder="John Doe">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="billing-details">
+            <!-- Bill address input -->
+            <div class="bill-address">
+              <label for="bill-address">Address</label>
+              <input type="text" id="bill-address" name="baddress" placeholder="Port City, Colombo">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card-details">
+            <!-- Card number input -->
+            <div class="card-number">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number" name="cnumber" placeholder="1234 5678 9012 3456">
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <table>
+            <tr>
+              <th>
+                <label for="card-expiration">Expiration Date</label>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <div class="year">
+                  <label for="year">Year</label>
+                  <select name="year" id="year">
+                    <option value="2028">2028</option>
+                    <option value="2027">2027</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023" selected>2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+              </td>
+              <td>
+                <div class="month">
+                  <label for="month">Month</label>
+                  <select name="month" id="month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june" selected>June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                  </select>
+                </div>
+              </td>
+              <td>
+                <!-- Card CVV input -->
+                <div class="card-cvv">
+                  <label for="card-cvv">CVV</label>
+                  <input type="text" id="card-cvv" name="cvv" placeholder="123">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Vaccine input -->
+    <!-- PHP: show the Vaccine -->
+    
+    <!-- Amount input -->
+    <!-- PHP: show the amount -->
+    
+    <!-- Pay button -->
+    <div class="pay">
+      <div class="pay-button">
+        <button name="pay">Pay</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+   <!-- Footer section -->
+   <footer>
+    <div class="footer">
+      <div class="footer-content">
+          <div class="contact">
+            <!-- Contact information -->
+            <h3>Contact us</h3>
+            <span class="locationicon"><ion-icon name="location"></ion-icon> &nbsp; No,72/B, Kaandy road, Malabe</span>
+            <span class="callicon"><ion-icon name="call"></ion-icon> &nbsp; +94 11 2992014</span>
+            <span class="mailicon"><ion-icon name="mail"></ion-icon> &nbsp; makovaccines@gmail.com</span>
+          </div>
+          <div class="socials">
+            <!-- Social media links -->
+            <h3>Follow us</h3>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+      </div>
+      <div class="row">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Customer Care</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <!-- Copyright information -->
+        <h4>INFERNO Copyright &copy; 2023 Inferno - All rights reserved || Designed By: Mako group</h4>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
